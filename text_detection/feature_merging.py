@@ -100,4 +100,4 @@ class featrue_merging(tf.keras.layers.Layer):
         # shape (None, None, None, fec)
         H_out = self.out(H3)
 
-        return H_out
+        return [H_out, H3, H2, H1, H0]
